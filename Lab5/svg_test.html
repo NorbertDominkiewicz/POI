@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szachy</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: darkolivegreen;
+        gap: 100px;
+    }
+    .tytul{
+        width: 50%; 
+        text-align: center;
+        background-color: rgba(105, 112, 92, 0.5);
+        border-radius: 32px;
+    }
+    .tytul h1{
+        color: gold; 
+        font-family: Courier New;
+    }
+    .szachownica{
+        padding: 4px; 
+        background-color: rgb(68, 9, 9); 
+        border: 3px solid rgba(235, 203, 25,0.8); 
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="tytul">
+        <h1>Szachy</h1>
+    </div>
+    <div class="szachownica">
+        <svg height="640" width="640" id="szachownica" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+    </div>
+    <script>
+        var szachownica = document.getElementById("szachownica");
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                let pole = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                pole.setAttribute("x", j * 80);
+                pole.setAttribute("y", i * 80);
+                pole.setAttribute("width", 80);
+                pole.setAttribute("height", 80);
+                if((i+j)%2==0){
+                    pole.setAttribute("fill", "white");
+                } else {
+                    pole.setAttribute("fill", "black");
+                }
+                szachownica.appendChild(pole);
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zapis UwB</title>
+        <link rel="stylesheet" href="styl.css" />
+    </head>
+    <body>
+        <div class="menu">
+            <div class="lista">
+                <ul>
+                    <li><a href="#akapity">Akapity</a></li>
+                    <li><a href="#plan">Plan zajęć</a></li>
+                    <li><a href="#rejestracja">Rejestracja</a></li>
+                </ul>
+            </div>
+            <div class="odnosnik">
+                <a target="_blank" href="https://uwb.edu.pl/"><img class="logo" src="logo.png"></a>
+            </div>
+        </div>
+        <div id="akapity" class="akapity">
+            <p style="text-align: left"><i>Teskt 1</i></p>
+            <p style="text-align: center"><b>Teskt 2</b></p>
+            <p style="text-align: right"><u>Tekst 3</u></p>
+        </div>
+        <div id="plan" class="tabelka">
+            <table>
+                <tr>
+                    <td>Godzina</td>
+                    <th>Poniedziałek</th>
+                    <th>Wtorek</th>
+                    <th>Środa</th>
+                    <th>Czwartek</th>
+                    <th>Piątek</th>
+                </tr>
+                <tr>
+                    <td>8:00 - 9:30</td>
+                    <td>-</td>
+                    <td>Laboratorium</td>
+                    <td>Ćwiczenia</td>
+                    <td>Wykład</td>
+                    <td>Laboratorium</td>
+                </tr>
+                <tr>
+                    <td>9:45 - 11:15</td>
+                    <td>Ćwiczenia</td>
+                    <td>Laboratorium</td>
+                    <td>Ćwiczenia</td>
+                    <td>-</td>
+                    <td>Laboratorium</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 13:00</td>
+                    <td>Wykład</td>
+                    <td>-</td>
+                    <td>Ćwiczenia</td>
+                    <td>Wykład</td>
+                    <td>Wykład</td>
+                </tr>
+                <tr>
+                    <td>13:15 - 14:45</td>
+                    <td>Ćwiczenia</td>
+                    <td>Laboratorium</td>
+                    <td>Ćwiczenia</td>
+                    <td>-</td>
+                    <td>Ćwiczenia</td>
+                </tr>
+            </table>
+        </div>
+        <div id="rejestracja" class="formularz">
+            <form>
+                <input type="text" placeholder="Imie:">
+                <input type="text" placeholder="Nazwisko:">
+                <textarea placeholder="Pełny adres:"></textarea>
+                <div class="wyborPlci">
+                    <label><input name="plec" type="radio">Mężczyzna</label>
+                    <label><input name="plec" type="radio">Kobieta</label>
+                </div>
+                <div class="krajPochodzenia">
+                    <h5>Kraj Pochodzenia:</h5>
+                    <select>
+                        <option>Wybierz</option>
+                        <option>Polska</option>
+                        <option>Białoruś</option>
+                        <option>Czechy</option>
+                    </select>
+                </div>
+                <div class="jezyki">
+                    <label><input type="checkbox">Java</label>
+                    <label><input type="checkbox">C++</label>
+                    <label><input type="checkbox">Python</label>
+                    <label><input type="checkbox">C#</label>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <a href="https://uwb.edu.pl/">Uniwersytet w Białymstoku</a>
+        </div>
+    </body>
+</html>

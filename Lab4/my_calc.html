@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <div class="tytul">
+        <h1>Kalkulator</h1>
+    </div>
+    <main>
+        <div class="kalkulator">
+            <div class="uklad-kalkulator">
+                <div class="input-kalkulator">
+                    <input id="dzialanie" type="text" id="przyklad" placeholder="Wprowadź przyklad">
+                </div>
+                <div class="button-kalkulator">
+                    <div class="numer">
+                        <button onclick=putLiczba(7)>7</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(8)>8</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(9)>9</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(0)>0</button>
+                    </div>
+                    <div class="operacja">
+                        <button onclick="putOperacja('/')">/</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(4)>4</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(5)>5</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(6)>6</button>
+                    </div>
+                    <div class="operacja">
+                        <button onclick="putOperacja('+')">+</button>
+                    </div>
+                    <div class="operacja">
+                        <button onclick="putOperacja('×')">×</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(1)>1</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(2)>2</button>
+                    </div>
+                    <div class="numer">
+                        <button onclick=putLiczba(3)>3</button>
+                    </div>
+                    <div class="operacja">
+                        <button onclick="putOperacja('-')">-</button>
+                    </div>
+                    <div class="operacja">
+                        <button onclick="oblicz()">=</button>
+                    </div>
+                </div>
+                <div id="zaawawansowane" class="zaawansowane" onmouseleave="hideAdv()">
+                    <button id="advBtn" onmouseenter="showAdv()">zaawansowane</button>
+                    <div id="opcje" class="opcje">
+                        <h3>Zaawansowane</h3>
+                        <div class="advFunkcje">
+                            <button onclick="oblicz('potega')">Do Kwadratu</button>
+                            <button onclick="oblicz('pierwiastek')">Pierwiastek drugi stopień</button>
+                            <button onclick="oblicz('sinus')">Sinus</button>
+                            <button onclick="oblicz('cosinus')">Cosinus</button>
+                            <button onclick="oblicz('tangens')">Tangens</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wyniki" class="wyniki">
+            <div class="wyniki-tytul">
+                <h3>Wyniki:</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

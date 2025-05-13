@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(to right,rgb(40,40,40), rgb(5,5,5));
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 25%;
+    font-family:'Courier New';
+    margin: 0;
+}
+
+header h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: brown;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a p{
+    text-align: center;
+    color: white;
+}
+
+.home{
+    padding: 8px;
+    background-color: brown;
+    border-radius: 32px;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+
+.home:hover{
+    background-color: rgb(104, 28, 28);
+}
+
+.source{
+    padding: 8px;
+    background-color: brown;
+    border-radius: 32px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.source p{
+    color: white;
+}
+
+.source p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

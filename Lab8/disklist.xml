@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE kolekcja SYSTEM "disklist.dtd">
+<kolekcja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="disklist.xsd">
+  <dvd_audio id="a1">
+    <autor>Ludwig van Beethoven</autor>
+    <dlugosc>46 minut</dlugosc>
+    <kraj>Niemcy</kraj>
+    <gatunek>Klasyka</gatunek>
+  </dvd_audio>
+
+  <dvd_audio id="a2">
+    <autor>Claude Debussy</autor>
+    <dlugosc>51 minut</dlugosc>
+    <kraj>Francja</kraj>
+    <gatunek>Klasyka</gatunek>
+  </dvd_audio>
+
+  <dvd_audio id="a3">
+    <autor>Wolfgang Amadeus Mozart</autor>
+    <dlugosc>60 minut</dlugosc>
+    <kraj>Niemcy</kraj>
+    <gatunek>Klasyka</gatunek>
+  </dvd_audio>
+
+  <dvd_audio id="a4">
+    <autor>Fryderyk Chopin</autor>
+    <dlugosc>55 minut</dlugosc>
+    <kraj>Polska</kraj>
+    <gatunek>Klasyka</gatunek>
+  </dvd_audio>
+
+  <dvd_audio id="a5">
+    <autor>Erik Satie</autor>
+    <dlugosc>42 minut</dlugosc>
+    <kraj>Francja</kraj>
+    <gatunek>Klasyka</gatunek>
+  </dvd_audio>
+
+  <dvd_video id="v1">
+    <tytul>Gwiezdne wojny: część I – Mroczne widmo</tytul>
+    <rok>1999</rok>
+    <kategoria>dla doroslych</kategoria>
+  </dvd_video>
+
+  <dvd_video id="v2">
+    <tytul>Gwiezdne wojny: część II – Atak klonów</tytul>
+    <rok>2002</rok>
+    <kategoria>dla doroslych</kategoria>
+  </dvd_video>
+
+  <dvd_video id="v3">
+    <tytul>Gwiezdne wojny: część III – Zemsta Sithów</tytul>
+    <rok>2005</rok>
+    <kategoria>dla doroslych</kategoria>
+  </dvd_video>
+
+  <dvd_video id="v4">
+    <tytul>Auta</tytul>
+    <rok>2006</rok>
+    <kategoria>dla dzieci</kategoria>
+  </dvd_video>
+
+  <dvd_video id="v5">
+    <tytul>Toy Story 2</tytul>
+    <rok>1999</rok>
+    <kategoria>dla dzieci</kategoria>
+  </dvd_video>
+
+</kolekcja>

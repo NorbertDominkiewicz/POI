@@ -1,0 +1,70 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New';
+}
+
+header h2{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.main{
+    width: 100%;
+}
+
+main .szachownica{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    gap: 1px;
+    background-color: blue;
+}
+main .szachownica .pole{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main .szachownica .czarne{
+    background-color: black;
+    color: white;
+}
+
+main .szachownica .biale{
+    background-color: white;
+    color: black;
+}
+
+main .szachownica .pole span{
+    opacity: 0;
+}
+
+main .szachownica .pole:hover span{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    main{
+        transform: scale(0.5);
+    }
+
+    main .szachownica .pole span {
+        opacity: 1;
+    }
+}
+

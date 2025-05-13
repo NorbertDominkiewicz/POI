@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(110, 66, 24);
+    margin: 0;
+    font-family: 'Courier New';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.title{
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 1px 1px rgb(243, 212, 39);
+    background-color: beige;
+}
+.loader{
+    border-radius: 32px;
+    padding: 20px;
+    cursor: pointer;
+    top: 150px;
+    right: 150px;
+    position: absolute;
+    background-color: wheat;
+    color: black;
+    font-size: 14px;
+}
+.clearer{
+    border-radius: 32px;
+    padding: 20px;
+    cursor: pointer;
+    top: 220px;
+    right: 145px;
+    position: absolute;
+    background-color: wheat;
+    color: black;
+    font-size: 14px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px); 
+    justify-content: center;
+    border: 4px solid black;
+    background-color: aliceblue;
+    width: 560px;
+    height: 560px;
+}
+.white {
+    background-color: white;
+}
+.black {
+    background-color: rgb(148, 129, 21);
+}
+.pole {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    text-shadow: 1px 1px rgb(243, 212, 39);
+}

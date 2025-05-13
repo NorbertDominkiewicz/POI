@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="kolekcja">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="dvd_audio" type="audioType"/>
+      <xs:element name="dvd_video" type="videoType"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="audioType">
+  <xs:sequence>
+    <xs:element name="autor" type="xs:string"/>
+    <xs:element name="dlugosc" type="xs:string"/>
+    <xs:element name="kraj" type="xs:string"/>
+    <xs:element name="gatunek" type="xs:string"/>
+  </xs:sequence>
+  <xs:attribute name="id" type="xs:ID" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="videoType">
+  <xs:sequence>
+    <xs:element name="tytul" type="xs:string"/>
+    <xs:element name="rok" type="xs:string"/>
+    <xs:element name="kategoria">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="dla dzieci"/>
+          <xs:enumeration value="dla doroslych"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+  </xs:sequence>
+  <xs:attribute name="id" type="xs:ID" use="required"/>
+</xs:complexType>
+
+</xs:schema>

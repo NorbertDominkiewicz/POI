@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informapedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="upperPanel">
+        <div class="title">
+            <h2>Informapedia</h2>
+        </div>
+        <div class="links">
+            <div class="menu">
+                <img src="graphics/m2.png">
+                <div class="buttons">
+                    <button onclick="showBio('turing')">Alan Turing</button>
+                    <button onclick="showBio('estrige')">Philip Don Estridge</button>
+                    <button onclick="showBio('wirth')">Niklaus Wirth</button>
+                    <button onclick="showBio('bjarne')">Bjarne Stroustrup</button>
+                    <button onclick="showBio('gosling')">James Gosling</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middlePanel">
+        <div class="bioViewer">
+            <div class="leftSide">
+                <img id="img">
+            </div>
+            <div class="rightSide">
+                <p id="text" class="text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottomPanel">
+        <div class="footer">
+            <p>
+                <a href="https://alioth.uwb.edu.pl/pwi-lab/ajax.html">Laboratorium 10</a>
+            </p>
+        </div>
+    </div>
+    <script src="skrypt.js"></script>
+</body>
+</html>

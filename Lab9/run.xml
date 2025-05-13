@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE position SYSTEM "position.dtd">
+<position>
+    <figura type="wierza" color="white" position="a1"/>
+    <figura type="kon" color="white" position="b1"/>
+    <figura type="laufer" color="white" position="c1"/>
+    <figura type="krolowka" color="white" position="d1"/>
+    <figura type="krol" color="white" position="e1"/>
+    <figura type="pionek" color="white" position="a2"/>
+    
+    <figura type="wierza" color="black" position="h8"/>
+    <figura type="kon" color="black" position="g8"/>
+    <figura type="laufer" color="black" position="f8"/>
+    <figura type="krolowka" color="black" position="d8"/>
+    <figura type="krol" color="black" position="e8"/>
+    <figura type="pionek" color="black" position="a7"/>
+</position>

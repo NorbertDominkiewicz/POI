@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("graphics/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tytul{
+    color: white;
+    font-family:'Courier New';
+    font-size: 18px;;
+}
+
+.gamePanel{
+    background-image: url("graphics/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 22px solid rgb(163, 165, 21);
+    border-radius: 32px;
+    width: 1536px;
+    height: 768px;
+    position: relative;
+}
+
+.scoreArea{
+    color: white;
+    position: absolute;
+    height: 250px;
+    width: 120px;
+    top: 60px;
+    font-family:'Courier New';
+    font-size: 42px;
+    left: 1440px;
+}
+
+.itemArea{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

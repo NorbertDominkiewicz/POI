@@ -1,0 +1,14 @@
+<!ELEMENT kolekcja (dvd_audio|dvd_video)*>
+<!ELEMENT dvd_audio (autor, dlugosc, kraj, gatunek)>
+<!ELEMENT dvd_video (tytul, rok, kategoria)>
+
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT dlugosc (#PCDATA)>
+<!ELEMENT kraj (#PCDATA)>
+<!ELEMENT gatunek (#PCDATA)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT rok (#PCDATA)>
+<!ELEMENT kategoria (#PCDATA)>
+
+<!ATTLIST dvd_audio id ID #REQUIRED>
+<!ATTLIST dvd_video id ID #REQUIRED>

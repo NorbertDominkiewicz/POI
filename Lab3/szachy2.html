@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<htmls>
+<head>
+    <meta charset="UTF-8">
+    <title>Szachy 2</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: lightblue;
+    }
+    td{
+        width: 50px;
+        height: 50px;
+    }
+    .black{
+        background-color: white;
+    }
+    .white{
+        background-color: black;
+    }
+</style>
+<body>
+    <table style="background-color: rgb(17, 142, 251);">
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr><tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+    </table>
+</body>
+</html>

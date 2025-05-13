@@ -1,0 +1,5 @@
+<!ELEMENT position (figura*)>
+<!ELEMENT figura EMPTY>
+<!ATTLIST figura type (pionek|wierza|kon|laufer|krolowka|krol) #REQUIRED>
+<!ATTLIST figura color (white|black) #REQUIRED>
+<!ATTLIST figura position CDATA #REQUIRED>

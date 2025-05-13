@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krzyżóweczka</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body id="b" onmousemove="wordsChecker()">
+    <div class="tutorial" id="tutorial">
+        <img onclick="closeTutorial()" class="close" src="x.svg">
+        <div class="content">
+            <p>1. Aby znaleźć podpowiedź do słówka, należy po prostu najechać na pasującą wertykalnie lub horyzontalnie komórkę dla słowa</p>
+            <img src="hit.png">
+            <p>2. Po wpisaniu wartości i ruszeniu myszką po stronie, nastąpi szybkie sprawdzenie czy słowo pasuje.</p>
+        </div>
+    </div>
+    <div class="title" id="title">
+        <h1>Krzyżóweczka Muzyczna</h1>
+        <button onclick="showTutorial()">Jak grać ?</button>
+    </div>
+    <div class="gameBoard" id="gameBoard">
+    </div>
+    <div class="footer">
+        <a href="https://alioth.uwb.edu.pl/pwi-lab/javascript.html">Laboratorium 7</a>
+    </div>
+    <script src="skrypt.js"></script>
+</body>
+</html>

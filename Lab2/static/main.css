@@ -1,0 +1,38 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 20%;
+}
+header h2{
+    text-align: center;
+    color: white;
+}
+
+article .kontener-zdjecia{
+    position: relative;
+    cursor: pointer;
+}
+
+article .kontener-zdjecia img{
+    width: 150px;
+    height: auto;
+    opacity:1
+}
+
+article .kontener-zdjecia label{
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    color: white;
+}
+
+article .kontener-zdjecia:hover img {
+    filter:blur(2px);
+    opacity: 0.5;
+}
+
+article .kontener-zdjecia:hover label {
+    opacity: 1;
+}

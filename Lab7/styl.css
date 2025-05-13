@@ -1,0 +1,134 @@
+body{
+    font-family: 'Courier new';
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+}
+
+.tutorial{
+    display: none;
+    position: absolute;
+    top: 300px;
+    width: 90vw;
+    height: auto;
+    border-radius: 32px;
+    background: linear-gradient(to right, rgb(228, 226, 226),rgb(200,200,200));
+    border: 3px solid black;
+}
+
+.tutorial .content{
+    text-align: center;
+}
+
+.tutorial .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.tutorial .content p{
+    font-size: 22px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: relative;
+    align-content: center;
+    height: 100px;
+    background: linear-gradient(to right, rgba(87, 87, 87, 0.8),rgba(200,200,200,0.8))
+}
+
+.title h1{
+    position: relative;
+}
+
+.title button{
+    position: absolute;
+    top: 2.5vh;
+    right: 2vw;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 32px;
+}
+
+.title button:hover{
+    background-color: rgb(207, 213, 218)
+}
+
+.gameBoard {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(20, 70px);
+    grid-template-rows: repeat(18, 70px); 
+    justify-content: center;
+}
+
+.tile{
+    text-transform: uppercase;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    color: black;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+.tileInput{
+    text-transform: uppercase;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    color: black;
+    font-family: 'Courier new';
+    font-weight: 450;
+    width: 67px;
+    height: 67px;
+    font-size: 40px;
+}
+
+.tileInput:focus{
+    background-color: aliceblue;
+}
+
+.hint {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    display: none;
+    width: 150px;
+}
+
+.footer{
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, rgb(228, 226, 226),rgb(200,200,200));
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+    font-size: 24px;
+}

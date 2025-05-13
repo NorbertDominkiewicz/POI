@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Równanie kwadratowe</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        color: white;
+        background-color: rgb(24, 24, 23);
+        font-family: Courier New;
+    }
+    .tytul{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        text-shadow: 2px 2px black;
+        background-color: rgb(101, 102, 97);
+
+    }
+    .tytul h1{
+        color: gold; 
+    }
+
+    .kontent{
+        display: flex;
+        gap: 25px;
+    }
+
+    .kontent .kulka{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        padding: 20px;
+        position: relative;
+        font-size: 15px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(197, 154, 43)
+    }
+
+    .kontent .kulka:hover{
+        transform: scale(1.1);
+        transition-duration: 0.2s;
+    }
+
+    .kontent .kulka .nazwa{
+        position: absolute;
+        opacity: 1;
+    }
+
+    .kontent .kulka .wzor{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .kontent .kulka:hover .wzor{
+        opacity: 1;
+    }
+
+    .kontent .kulka:hover .nazwa{
+        opacity: 0;
+    }
+    .strzalka{
+        display: flex;
+        justify-content: center;
+    }
+    .strzalka img{
+        transform: rotate(90deg);
+    }
+</style>
+<body>
+    <div></div>
+    <div class="kontent">
+        <div class="kulka">
+            <span class="nazwa">Postać ogólna</span>
+            <span class="wzor">
+                <math style="font-size: 18px" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>a</mi><msup><mi>x</mi><mn>2</mn></msup>
+                    <mo>+</mo>
+                    <mi>b</mi><mi>x</mi>
+                    <mo>+</mo>
+                    <mi>c</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                </math>
+            </span>
+        </div>
+    </div>
+    <div class="strzalka">
+        <img src="strzalka.png">
+    </div>
+    <div class="kontent">
+        <div class="kulka">
+            <span style="left: 26px"class="nazwa">Obliczanie wartości Δ (delty):</span>
+            <span class="wzor">
+                <math style="font-size: 22px" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Δ</mi>
+                    <mo>=</mo>
+                    <msup><mi>b</mi><mn>2</mn></msup>
+                    <mo>-</mo>
+                    <mn>4</mn><mi>a</mi><mi>c</mi>
+                </math>
+            </span>
+        </div>
+    </div>
+    <div class="strzalka">
+        <img style="transform: rotate(155deg);" src="strzalka.png">
+        <img src="strzalka.png">
+        <img style="transform: rotate(25deg);"src="strzalka.png">
+    </div>
+
+    <div class="kontent">
+        <div class="kulka">
+            <span style="left: 30px; font-size: 35px;" class="nazwa"><math><mi>Δ</mi> <mo>&gt;</mo> <mn>0</mn></math></span>
+            <span style="left: 12px; font-size: 14px;" class="wzor">
+                Równanie ma dwa pierwiastki rzeczywiste
+            </span>
+        </div>
+        <div class="kulka">
+            <span style="left: 30px; font-size: 35px;" class="nazwa"><math><mi>Δ</mi> <mo>=</mo> <mn>0</mn></math></span>
+            <span style="left: 20px; font-size: 14px;" class="wzor">
+                Równanie ma jeden pierwiastek rzeczywisty
+            </span>
+        </div>
+        <div class="kulka">
+            <span style="left: 30px; font-size: 35px;" class="nazwa"><math><mi>Δ</mi> <mo>&lt;</mo> <mn>0</mn></math></span>
+            <span style="left: 8px; font-size: 14px;" class="wzor">
+                Równanie nie ma pierwiastków rzeczywistych
+            </span>
+        </div>
+    </div>
+    <div class="strzalka">
+        <img src="strzalka.png">
+    </div>
+    <div class="kontent">
+        <div class="kulka">
+            <span style="left: 15px; font-size: 16px;"class="nazwa">Wyliczenie pierwiastków</span>
+            <span class="wzor">
+                <math style="font-size: 28px" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mo>-</mo><mi>b</mi>
+                            <mo>&#xB1;</mo>
+                            <msqrt>
+                                <mi>Δ</mi>
+                            </msqrt>
+                        </mrow>
+                        <mrow>
+                            <mn>2</mn><mi>a</mi>
+                        </mrow>
+                    </mfrac>
+                </math>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
