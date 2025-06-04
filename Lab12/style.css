@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right,rgb(201, 201, 201), rgb(247, 247, 247), rgb(180, 180, 180));
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+body .upperPanel{
+    background-color: aliceblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: auto;
+}
+
+body .upperPanel .title, .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .upperPanel .links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+body .upperPanel .title{
+    font-family: 'Comic Sans MS';
+    color: white;
+    text-shadow: 4px 4px black;
+    font-size: 25px;
+}
+
+body .upperPanel .title a{
+    display: flex;
+    justify-content: center;
+}
+
+body .upperPanel .title a img{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+}
+
+body .upperPanel .search input[type="text"]{
+    background-color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: left;
+    width: min(400px);
+    padding: 10px;
+}
+
+body .upperPanel .search button[type="submit"]{
+    background-color: white;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+body .upperPanel .search button[type="submit"] img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+body .upperPanel .links ul{
+    list-style: none;
+}
+
+body .upperPanel .links ul li{
+    float: left;
+    margin: 1vw;
+}
+
+body .upperPanel .links ul li button{
+    background-color: white;
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+body .upperPanel .links ul li button img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+
+body .upperPanel .links ul li button:hover{
+    background-color: rgb(172, 172, 172);
+    color: white;
+}
+
+body .upperPanel .links ul li .drop{
+    display: none;
+}
+
+body .middlePanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .middlePanel .container{
+    width: 1600px;
+    margin-top: 2vh;
+    height: 700px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0.7vw 0.7vw gray;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none; 
+}
+
+table tr th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+body .bottomPanel{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+body .bottomPanel .footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+body .bottomPanel .footer p a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px brown;
+}
+
+.adder{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
+.adder form{
+    padding: 80px;
+    display: flex;
+    border-radius: 32px;
+    flex-direction: column;
+    position: relative;
+    background-color: goldenrod;
+    align-items: center;
+    border: 1px solid black;
+    gap: 10px;
+}
+
+.adder form p{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 1vh;
+    left: 50%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.adder form input[type="text"]{
+    background-color: white;
+    border-radius: 32px;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.adder form button[type="submit"]{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 1vh;
+    left: 50%;
+    background-color: white;
+    border-radius: 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close{
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    background-color: white;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.close img{
+    height: 50%;
+    width: 50%;
+}
+
+.adder form button[type="submit"] img{
+    height: 50%;
+    width: 50%;
+}
