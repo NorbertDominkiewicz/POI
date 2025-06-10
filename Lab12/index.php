@@ -12,42 +12,53 @@ $search;
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="up" class="upperPanel">
-        <div class="title">
-            <!-- <h2>MySQL Viewer</h2> -->
-             <a href=""><img src="graphics/logo.png" alt=""></a>
-        </div>
-        <div class="search">
-            <form action="" method='get'>
-                <input type="text" name="search" id="" placeholder="
-                <?php 
-                if(isset($_GET['search'])){
-                    echo($_GET['search']);
-                } else{
-                    echo("Wprowadź czego szukasz...");
-                }
-                ?>
-                ">
-                <!-- <button type="submit"><img src="graphics/search.svg" alt=""></button> -->
-            </form>
-        </div>
-        <div class="links">
-            <ul>
-                <!--<li><button>Zmień bazę danych</button></li>-->
-                <!-- <li><button onclick="add()">Dodaj dane</button></li> -->
-                <li><button><img src="graphics/user.png" alt=""></button>
-                    <div class="drop">
-                        <button>Ustawienia</button>
-                        <button>Wyloguj</button>
-                    </div>
-                </li>
-        </div>
-    </div>
+        <?php
+        if(isset($_SESSION['login'])){
+            echo('
+                <div id="up" class="upperPanel">
+                <div class="title">
+                    <a href=""><img src="graphics/logo.png" alt=""></a>
+                </div>
+                <div class="search">
+                    <form action="" method="get">
+                        <input type="text" name="search" id="" placeholder="');
+            if(isset($_GET['search'])){
+                echo($_GET['search']);
+            } else{
+                echo("Wprowadź czego szukasz...");
+            }
+            echo('">
+                    </form>
+                </div>
+                <div class="links">
+                    <ul>');
+            if(isset($_SESSION['login']) && $_SESSION['login'] == 'admin'){
+                echo('<li><button onclick="add()">Dodaj dane</button></li>');
+            }
+            echo('
+                        <li><button onclick="show(\'accountViewer\')"><img src="graphics/user.png" alt=""></button></li>
+                    </ul>
+                </div>
+                </div>
+                ');
+        } else{
+            echo("
+            <div id='up' class='upperPanelUnLogged'>
+                <div class='titleUnLogged'>
+                    <a href=''><img src='graphics/logo.png' alt=''></a>
+                </div>
+            </div>
+            ");
+        }
+        ?>
     <div id="mp" class="middlePanel">
-        <div class="container">
-            <table>
-                <tr style="background-color: #8a7474; color: white; height: 70px;">
-                    <th style="border-top-left-radius: 32px;" >ID</th>
+            <?php
+            if(isset($_SESSION['login'])){
+                echo('
+                <div class="container">
+                <table>
+                <tr style="background-color:rgb(109, 141, 209); color: white; height: 70px;">
+                    <th style="border-top-left-radius: 6px;" >ID</th>
                     <th>Nazwa uczelni</th>
                     <th>Kierunek studiów</th>
                     <th>Profil studiów</th>
@@ -57,9 +68,8 @@ $search;
                     <th>Udział kobiet</th>
                     <th>Liczba kobiet</th>
                     <th>Udział cudzoziemców</th>
-                    <th colspan="2" style="border-top-right-radius: 32px;">Liczba cudzoziemców</th>
-                </tr>
-            <?php
+                    <th colspan="2" style="border-top-right-radius: 6px;">Liczba cudzoziemców</th>
+                </tr>');
             $kwerenda;
             if(isset($_GET['search'])){
                 $search = $_GET['search'];
@@ -94,18 +104,37 @@ $search;
                         <td>$liczba_kobiet</td>
                         <td>$udzial_cudzoziemcow</td>
                         <td>$liczba_cudzoziemcow</td>
-                        <td style='border-left: 2px solid black'><img style='cursor: pointer' onclick=\"del($id)\" src='graphics/delete.svg'></td>
+                        ");
+                        if(isset($_SESSION['login']) && $_SESSION['login'] == 'admin'){
+                            echo("<td style='border-left: 2px solid black'><img style='cursor: pointer' onclick=\"del($id)\" src='graphics/delete.svg'></td>");
+                        }
+                        echo("
                     </tr>
                 ");
                 echo("<tr><td colspan='12'><hr style='border-radius: 5px; border: 2px solid black;'></td></tr>");
             }
-            ?>
-            </table>
-        </div>
+            echo("</table>
+        </div>");
+        } else{
+            echo("
+            <div class='loginOrRegisterContainer'>
+                <div class='logInOption'>
+                    <button onclick='logIn()'>Log In</button>
+                </div>
+                <div style='background-color: white;'>
+                    
+                </div>
+                <div class='registerOption'>
+                    <button onclick='register()'>Register</button>
+                </div>
+            </div>"
+        );
+        }
+        ?>
     </div>
     <div id="bp" class="bottomPanel">
         <div class="footer">
-            <p>Laboratorium 12 & <a href="https://radon.nauka.gov.pl/raporty/oferta_dydaktyczna">Zródło na potrzeby zadania</a></p>
+            <p>Laboratorium 13</p>
         </div>
     </div>
     <div id="adder" class="adder">
@@ -125,6 +154,17 @@ $search;
             <button type="submit"><img src="graphics/upload.png"></button>
             </form>
         </div>
+    </div>
+    <div id="accountViewer" class="accountViewer">
+        <button class="close" onclick="closeView('accountViewer')"><img src="graphics/close.svg"></button>
+        <?php
+        if(isset($_SESSION['login'])){
+            echo('<div class="logged">
+            <h2>Zalogowano jako ' . $_SESSION["login"] . '</h2>
+            <button class="logOut" onclick="logOut()">Log Out</button>
+        </div>');
+        }
+        ?>
     </div>
     <script src="script.js"></script>
 </body>

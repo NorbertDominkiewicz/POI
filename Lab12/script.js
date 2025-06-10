@@ -10,13 +10,33 @@ function add(){
     adderPanel.style.display = 'flex';
 }
 
-function close(){
+function del(id){
+    window.location.href = "delete.php?id=" + id;
+}
+
+function logOut(){
+    window.location.href = "logout.php";
+}
+
+function logIn(){
+    window.location.href = "login";
+}
+
+function register(){
+    window.location.href = "register";
+}
+
+function show(id){
+    upperPanel.style.filter = 'blur(10px)';
+    middlePanel.style.filter = 'blur(10px)';
+    bottomPanel.style.filter = 'blur(10px)';
+    document.getElementById(id).style.display = 'flex';
+}
+
+function closeView(id){
+    console.log("jd");
     upperPanel.style.filter = 'blur(0px)';
     middlePanel.style.filter = 'blur(0px)';
     bottomPanel.style.filter = 'blur(0px)';
-    adderPanel.style.display = 'none';
-}
-
-function del(id){
-    window.location.href = "delete.php?id=" + id;
+    document.getElementById(id).style.display = 'none';
 }

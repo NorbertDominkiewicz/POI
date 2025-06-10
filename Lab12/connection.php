@@ -11,4 +11,6 @@ if(!$connection){
     echo("No connection. Repair connection.php");
 }
 
+session_start();
+
 ?>
